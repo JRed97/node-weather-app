@@ -25,7 +25,7 @@ weather_form.addEventListener("submit", (e) => {
                 }
                 else
                 {
-                    success_p.innerHTML = data.forecast;
+                    success_p.innerHTML = data.location + "<br><br>" + data.forecast + " It is currently " + data.temp + " degrees out." + " There is a " + data.precipitation + "% chance of rain.";
                 }
             });
         });
