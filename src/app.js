@@ -60,7 +60,9 @@ app.get("/weather", (req, res) => {
                         res.send({
                             forecast: forecast_data.summary,
                             precipitation: forecast_data.current_precip,
-                            temp: forecast_data.current_temp,
+                            current_temp: forecast_data.current_temp,
+                            temp_high: forecast_data.temp_high,
+                            temp_low: forecast_data.temp_low,
                             address: req.query.address,
                             location: place
                         })
